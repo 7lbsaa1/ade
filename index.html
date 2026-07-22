@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تحدي كرة القدم | تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="page-center">
+      <section class="login-card">
+        <div class="logo">⚽</div>
+        <h1>تحدي كرة القدم</h1>
+        <p>سجل بياناتك ثم ابدأ الاختبار</p>
+
+        <div id="alertBox" class="alert error"></div>
+
+        <form id="loginForm">
+          <label class="field">
+            <span>اسم المستخدم</span>
+            <input
+              id="username"
+              type="text"
+              placeholder="اكتب اسمك هنا"
+              minlength="3"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>رقم الهاتف</span>
+            <input
+              id="phone"
+              type="tel"
+              inputmode="numeric"
+              placeholder="مثال: 01012345678"
+              minlength="8"
+              required
+            />
+          </label>
+
+          <button class="primary-btn" type="submit">ابدأ الاختبار ←</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="login.js"></script>
+  </body>
+</html>
