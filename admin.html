@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة الإدارة | تحدي كرة القدم</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="admin-header">
+      <div class="header-content">
+        <div>
+          <h1 class="header-title">⚽ لوحة إدارة تحدي كرة القدم</h1>
+          <p class="header-subtitle">مراجعة إجابات الطلاب واعتماد النتائج</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="admin-layout">
+      <aside class="admin-sidebar">
+        <h3>الطلاب</h3>
+        <div id="studentsList" class="students-list">
+          <p class="empty-state">جارٍ تحميل الطلاب...</p>
+        </div>
+      </aside>
+
+      <section id="adminContent" class="admin-card">
+        <div class="empty-state">
+          اختر طالبًا من القائمة لعرض امتحانه ومراجعة إجاباته.
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>
